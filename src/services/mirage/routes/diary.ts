@@ -77,6 +77,10 @@ export const addEntry = (
       ...diary.attrs,
       entry: entry.attrs,
     });
+    return {
+      diary: diary.attrs,
+      entry: entry.attrs,
+    };
   } catch (error) {
     return handleErrors(error, 'Failed to save Entry');
   }
